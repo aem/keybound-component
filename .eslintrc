@@ -1,0 +1,10 @@
+{
+  "parser": "babel-eslint",
+  "extends": "airbnb-base",
+  "plugins": ["react"],
+  "rules": {
+    "comma-dangle": 0,
+    "react/jsx-uses-vars": "error",
+    "max-len": 0
+  }
+}

@@ -1,4 +1,4 @@
-# keybound-component
+# keybound-component [![Build Status](https://travis-ci.org/aem/keybound-component.svg?branch=master)](https://travis-ci.org/aem/keybound-component)
 This library contains a higher-order React component that you can use to wrap your own component, allowing you to easily add keybindings to your React application in a more declarative, idiomatic way.
 
 For a simple, self-contained example, check out [CountKeys](https://git.hubteam.com/amarkon/keybound-component/blob/master/src/example/CountKeys.js).

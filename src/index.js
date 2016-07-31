@@ -26,9 +26,9 @@ function buildCommandListener() {
       selectedEvents = keyboardEvents.shift;
     }
 
-    const callback = selectedEvents[e.keyCode] || selectedEvents[e.code];
-    if (callback) {
-      callback(e);
+    const callbacks = selectedEvents[e.keyCode] || selectedEvents[e.code];
+    if (callbacks && callbacks.length) {
+      callbacks.forEach(c => c());
     }
   };
 
@@ -81,9 +81,12 @@ const KeyboundComponent = WrappedComponent => class extends React.Component {
       return;
     }
     modifiers = modifiers || 'default';
-    keyboardEvents[modifiers][KEYS[parts[0]]] = callback;
-    if (NUMBERS.indexOf(parseInt(parts(0), 10) + 48) !== -1) {
-      keyboardEvents[modifiers][KEYS[`NUM_PAD_${parts[0]}`]] = callback;
+    if (!keyboardEvents[modifiers][KEYS[parts[0]]]) {
+      keyboardEvents[modifiers][KEYS[parts[0]]] = [];
+    }
+    keyboardEvents[modifiers][KEYS[parts[0]]].push(callback);
+    if (NUMBERS[parseInt(parts[0], 10) + 48]) {
+      keyboardEvents[modifiers][KEYS[`NUM_PAD_${parts[0]}`]].push(callback);
     }
   }
 

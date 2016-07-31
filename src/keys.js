@@ -46,12 +46,6 @@ const NON_ALPHA_NUMERIC = {
   NUM_PAD_8: 104,
   NUM_PAD_9: 105,
 
-  MULTIPLY: 106,
-  ADD: 107,
-  SUBTRACT: 109,
-  DECIMAL: 110,
-  DIVIDE: 111,
-
   F1: 112,
   F2: 113,
   F3: 114,
@@ -65,17 +59,16 @@ const NON_ALPHA_NUMERIC = {
   F11: 122,
   F12: 123,
 
-  SEMI_COLON: 186,
-  EQUALS: 187,
-  COMMA: 188,
-  DASH: 189,
-  PERIOD: 190,
-  FORWARD_SLASH: 191,
-  GRAVE: 192,
-  OPEN_BRACKET: 219,
-  BACK_SLASH: 220,
-  CLOSE_BRACKET: 221,
-  SINGLE_QUOTE: 222
+  ';': 186,
+  '=': 187,
+  ',': 188,
+  '-': 189,
+  '.': 190,
+  '/': 191,
+  '[': 219,
+  '\\': 220,
+  ']': 221,
+  "'": 222
 };
 
 export const KEYS = { ...LETTERS, ...NUMBERS, ...NON_ALPHA_NUMERIC };

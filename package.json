@@ -2,7 +2,7 @@
   "name": "keybound-component",
   "version": "0.1.0",
   "description": "A React higher-order component for simple, declarative keybindings",
-  "author": "Adam Markon <amarkon@hubspot.com>",
+  "author": "Adam Markon <amarkon895@gmail.com>",
   "main": "./dist/index.js",
   "scripts": {
     "codecov": "istanbul cover ./node_modules/.bin/_mocha -- test --recursive --compilers js:babel-register && codecov",

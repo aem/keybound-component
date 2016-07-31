@@ -72,6 +72,13 @@ describe('Keybindings Test', function() {
     const $el = $('h3#backspace');
     expect($el.text()).toBe('0');
     document.dispatchEvent(createEvent(8));
+    expect($el.text()).toBe('3');
+  });
+
+  it('handles special characters', () => {
+    const $el = $('h3#semi-colon');
+    expect($el.text()).toBe('0');
+    document.dispatchEvent(createEvent(186, true));
     expect($el.text()).toBe('1');
   });
 });

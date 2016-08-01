@@ -2,7 +2,7 @@
 
 This library contains a higher-order React component that you can use to wrap your own component, allowing you to easily add keybindings to your React application in a more declarative, idiomatic way.
 
-For a simple, self-contained example, check out [CountKeys](https://git.hubteam.com/amarkon/keybound-component/blob/master/src/example/CountKeys.js).
+For a simple, self-contained example, check out [CountKeys](https://github.com/aem/keybound-component/blob/master/example/CountKeys.js).
 
 ### Why `keybound-component` over other solutions?
 All other solutions on NPM have two main issues. Either...
